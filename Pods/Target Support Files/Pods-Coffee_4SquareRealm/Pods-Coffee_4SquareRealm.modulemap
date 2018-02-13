@@ -1,0 +1,6 @@
+framework module Pods_Coffee_4SquareRealm {
+  umbrella header "Pods-Coffee_4SquareRealm-umbrella.h"
+
+  export *
+  module * { export * }
+}

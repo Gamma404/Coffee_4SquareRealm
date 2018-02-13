@@ -14,6 +14,7 @@
 		1868E5422032CFDD00A466D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1868E5402032CFDD00A466D1 /* LaunchScreen.storyboard */; };
 		1868E54A2032D05300A466D1 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1868E5492032D05300A466D1 /* Podfile */; };
 		1868E54C2032D18100A466D1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1868E54B2032D18100A466D1 /* Info.plist */; };
+		DD0518D9A0258D23EA491035 /* Pods_Coffee_4SquareRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1D359EBF43B8E6130326DED /* Pods_Coffee_4SquareRealm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		1868E5432032CFDD00A466D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1868E5492032D05300A466D1 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		1868E54B2032D18100A466D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		721B2D5DFF9E242426604141 /* Pods-Coffee_4SquareRealm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffee_4SquareRealm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coffee_4SquareRealm/Pods-Coffee_4SquareRealm.release.xcconfig"; sourceTree = "<group>"; };
+		994B9AF3CC4FC9E732C26DBB /* Pods-Coffee_4SquareRealm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffee_4SquareRealm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coffee_4SquareRealm/Pods-Coffee_4SquareRealm.debug.xcconfig"; sourceTree = "<group>"; };
+		D1D359EBF43B8E6130326DED /* Pods_Coffee_4SquareRealm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coffee_4SquareRealm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD0518D9A0258D23EA491035 /* Pods_Coffee_4SquareRealm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				1868E5362032CFDD00A466D1 /* Coffee_4SquareRealm */,
 				1868E5352032CFDD00A466D1 /* Products */,
+				CBF270A77312E3CD1069A601 /* Pods */,
+				3E70B8D198F02407AECF53FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,23 @@
 			path = Coffee_4SquareRealm;
 			sourceTree = "<group>";
 		};
+		3E70B8D198F02407AECF53FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1D359EBF43B8E6130326DED /* Pods_Coffee_4SquareRealm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBF270A77312E3CD1069A601 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				994B9AF3CC4FC9E732C26DBB /* Pods-Coffee_4SquareRealm.debug.xcconfig */,
+				721B2D5DFF9E242426604141 /* Pods-Coffee_4SquareRealm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1868E5462032CFDD00A466D1 /* Build configuration list for PBXNativeTarget "Coffee_4SquareRealm" */;
 			buildPhases = (
+				268BB772EA0CED15416FFC13 /* [CP] Check Pods Manifest.lock */,
 				1868E5302032CFDD00A466D1 /* Sources */,
 				1868E5312032CFDD00A466D1 /* Frameworks */,
 				1868E5322032CFDD00A466D1 /* Resources */,
+				73B4E82C7F699C2BDD230C63 /* [CP] Embed Pods Frameworks */,
+				105E3A7E85974676B64EDA2F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,6 +165,72 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		105E3A7E85974676B64EDA2F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Coffee_4SquareRealm/Pods-Coffee_4SquareRealm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		268BB772EA0CED15416FFC13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coffee_4SquareRealm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73B4E82C7F699C2BDD230C63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Coffee_4SquareRealm/Pods-Coffee_4SquareRealm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BlueSocket/Socket.framework",
+				"${BUILT_PRODUCTS_DIR}/EasyAnimation/EasyAnimation.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/QuadratTouch/QuadratTouch.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftNotificationCenter/SwiftNotificationCenter.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Socket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyAnimation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuadratTouch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftNotificationCenter.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Coffee_4SquareRealm/Pods-Coffee_4SquareRealm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1868E5302032CFDD00A466D1 /* Sources */ = {
@@ -280,6 +373,7 @@
 		};
 		1868E5472032CFDD00A466D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 994B9AF3CC4FC9E732C26DBB /* Pods-Coffee_4SquareRealm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,6 +388,7 @@
 		};
 		1868E5482032CFDD00A466D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 721B2D5DFF9E242426604141 /* Pods-Coffee_4SquareRealm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

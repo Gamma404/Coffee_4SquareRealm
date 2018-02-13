@@ -1,0 +1,32 @@
+PODS:
+  - BlueSocket (0.12.90)
+  - EasyAnimation (2.0.2)
+  - PKHUD (5.0.0)
+  - QuadratTouch (1.1.1)
+  - Realm (3.1.1):
+    - Realm/Headers (= 3.1.1)
+  - Realm/Headers (3.1.1)
+  - RealmSwift (3.1.1):
+    - Realm (= 3.1.1)
+  - SwiftNotificationCenter (1.0.2)
+
+DEPENDENCIES:
+  - BlueSocket
+  - EasyAnimation
+  - PKHUD (~> 5.0)
+  - QuadratTouch (>= 1.0)
+  - RealmSwift
+  - SwiftNotificationCenter
+
+SPEC CHECKSUMS:
+  BlueSocket: 6afbda86bc6e06571db9c9ab9fe880c5a069f65b
+  EasyAnimation: 977ef673efe8ce62447807eedb380a77b189dc80
+  PKHUD: 3c001512c6e002091184197a8de7a20420786e3b
+  QuadratTouch: 296d83c63a4328f6f40af9fc728fe24f0e3b00d4
+  Realm: 42d1c38a5b1bbcc828b48a7ce702cb86fc68adf4
+  RealmSwift: d31937ca6a6ee54acde64ec839523c0a3c04924b
+  SwiftNotificationCenter: d108168dcbb6b804804cc22d5848733c3ca7ff5b
+
+PODFILE CHECKSUM: 595fc703592ed53ab408a31cecf2ecdc9d23d5ce
+
+COCOAPODS: 1.4.0
